@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-find ./tttt -type f > file;
+find ./ ! -path "*/.git/*" -type f > file;
 
 IFS=$'\n'       # make newlines the only separator
 set -f          # disable globbing
